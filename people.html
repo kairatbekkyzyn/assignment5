@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People of the City</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/people.css">  
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="mainpage.html">Astana Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="people.html">People</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+                </ul>
+                <div class="navbar-text ml-3">
+                    <button id="dateTime" class="btn btn-secondary">Show Current Time</button>
+                </div>
+            </div>
+            
+            <div class="navbar-text ml-3">
+                <button id="themeToggleBtn" class="btn btn-secondary">Toggle Day/Night Theme</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-bg text-center py-5">
+        <h1 class="display-2">People of Astana</h1>
+        <h2>The Faces of Kazakhstan's Capital</h2>
+    </header>
+
+    <!-- Greeting Section -->
+    <section class="container mt-4">
+        <h3 id="greetingSection" class="d-inline-block mb-0 me-3"></h3>
+        <button id="playGreetingSound" class="btn btn-secondary">Play Sound</button>
+    </section>
+
+    <div class="row text-center mb-4">
+        <div class="col-md-12 mb-3">
+            <h3 class="display-4 stats-text mb-2 stats"><strong>1 324 000+</strong></h3>
+            <p class="lead mb-2"><strong>Population up to 2024</strong></p>
+        </div>
+        <div class="col-md-3 mb-2">
+            <h3 class="mb-1 stats"><strong>79,1%</strong></h3>
+            <p class="lead mb-0">Kazakh</p>
+        </div>
+        <div class="col-md-3 mb-2">
+            <h3 class="mb-1 stats"><strong>12,85%</strong></h3>
+            <p class="lead mb-0">Russian</p>
+        </div>
+        <div class="col-md-3 mb-2">
+            <h3 class="mb-1 stats"><strong>1,32%</strong></h3>
+            <p class="lead mb-0">Ukrainian</p>
+        </div>
+        <div class="col-md-3 mb-2">
+            <h3 class="mb-1 stats"><strong>6,73%</strong></h3>
+            <p class="lead mb-0">Others</p>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <section class="container mt-5 text-center">
+        <h2>Discover Influential People</h2>
+        <div id="peopleContainer" class="row mt-4"></div>
+        <a href="#" id="readMoreLink" class="d-block mt-3">Read more...</a>
+    </section>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p class="mb-0">2024 Nuray Kairatbekkyzy Website</p>
+    </footer>
+
+    <script src="people.js"></script>
+</body>
+</html>
